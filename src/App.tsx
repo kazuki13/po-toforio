@@ -2,11 +2,10 @@ import logo from './logo.svg';
 import { BrowserRouter, Routes, Route, Link,NavLink } from "react-router-dom";
 import Home from './js/HOME'; //作成したpage1.jsを読み込んでいる
 import Productions from './js/Productions';
-import Wasurenbou from './js/wasurenbou';
+import φωτίζω from './js/φωτίζω';
 import Egate from './js/E-gate';
-import Souseki from './js/souseki';
+import Face from './js/face';
 import Satoukibi from './js/satoukibi';
-import Wannyannet from './js/Wannyannet';
 import Others from './js/others';
 import React from 'react'
 
@@ -18,11 +17,10 @@ class App extends React.Component {
         <Routes>
           <Route path={`/`} element={<Home />} />
           <Route path={`/Productions`} element={<Productions />} />
-          <Route path={`/wasurenbou`} element={<Wasurenbou />} />
+          <Route path={`/φωτίζω`} element={<φωτίζω />} />
           <Route path={`/E-gate`} element={<Egate />} />
-          <Route path={`/souseki`} element={<Souseki />} />
+          <Route path={`/Face`} element={<Face />} />
           <Route path={`/satoukibi`} element={<Satoukibi />} />
-          <Route path={`/Wannyannet`} element={<Wannyannet />} />
           <Route path={`/other`} element={<Others />} />
         </Routes>
       </BrowserRouter>

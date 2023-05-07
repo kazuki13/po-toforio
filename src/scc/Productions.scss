@@ -1,10 +1,18 @@
 
   .root2 {
-    background-color:#1D1D1D;
+    background-color:#ffffff;
     margin:0;
     font-family: 'Droid Sans', sans-serif;
     height: auto;
-    .test_a::before{
+
+    // 中心線の長さ調節
+    .before_long {
+      position: relative;
+      height: auto;
+    }
+
+    // 中央線
+    .before_long::before{
       content: '';
       position:absolute;
       top: 50px;
@@ -23,6 +31,8 @@
       margin:auto;
       position: relative absolute ;
       left:-5px;
+
+      // 一つのチームのまとまり 左
       .entry {
         width:calc(50% - 120px);
         right:10px;
@@ -39,6 +49,8 @@
           margin-bottom:12px;
           position: relative;
           color:#3f3f3f;
+
+          // 円
           &:before {
             content: '';
             position: absolute;
@@ -69,6 +81,7 @@
             line-height:1.4em;
           }
         }
+        // 一つのチームのまとまり　右
         &:nth-child(2n) {
           text-align:left;
           float:right;
@@ -84,16 +97,4 @@
       }
     }
   }
-  .test_a{
-    height: auto;
-  }
-  .test_a {
-    background-color:#ffffff;
-    height: auto;
-    display: flex;
-    position: relative;
-  }
-  
-  .main{
-    margin:auto;
-  }
+
