@@ -18,7 +18,9 @@
     "sass": "^1.62.0",
     "scss": "^0.2.4",
     "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "webpack": "^4.46.0",
+    "yarn.lock": "^0.0.1-security"
   },
   "scripts": {
     "start": "react-scripts start",
